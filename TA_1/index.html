@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TA_1</title>
+  </head>
+  <body>
+    <h1>Funciones en Pantalla</h1>
+
+    <label for="texto">Texto:</label>
+    <input type="text" id="texto" />
+
+    <label for="repeticiones">Repeticiones:</label>
+    <input type="number" id="repeticiones" />
+
+    <button onclick="mostrarRepeticiones()">Repetir Texto</button>
+    <button onclick="mostrarReverso()">Revertir Texto</button>
+
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+
+    <h1>Manipulación de Arreglos</h1>
+
+    <label for="arrayInput">Array (separado por comas):</label>
+    <input type="text" id="arrayInput" placeholder="ej. 1,2,3,4,5" />
+
+    <label for="itemInput">Elemento a Eliminar:</label>
+    <input type="text" id="itemInput" placeholder="ej. 3" />
+
+    <button onclick="mostrarItems()">Eliminar Elemento</button>
+
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+
+    <label for="booksInput">Libros (formato JSON):</label>
+    <textarea
+      id="booksInput"
+      placeholder='ej. [{"name": "Libro 1"}, {"name": "Libro 2"}]'
+    ></textarea>
+
+    <button onclick="mostrarTitulos()">Obtener Títulos</button>
+
+    <h2>Títulos:</h2>
+    <p id="titulos"></p>
+
+    <h1>Filtrado y Transformación</h1>
+
+    <h2>Números Impares</h2>
+    <input
+      type="text"
+      id="numsInputOdds"
+      placeholder="Ingresa números separados por comas"
+    />
+    <button onclick="showOdds()">Mostrar Números Impares</button>
+    <p id="oddsResult"></p>
+
+    <h2>Contar Duplicados</h2>
+    <input
+      type="text"
+      id="numsInputDuplicates"
+      placeholder="Ingresa números separados por comas"
+    />
+    <button onclick="countDuplicates()">Contar Duplicados</button>
+    <p id="duplicatesResult"></p>
+
+    <!-- Puse los scripts acá porq si los ponia en el head algunas cosas del DOM no me funcionaban no investigué mucho el pq  -->
+    
+    <script src="ejercicio1.js"></script>
+    <script src="ejercicio2.js"></script>
+    <script src="ejercicio3.js"></script>
+  </body>
+</html>
